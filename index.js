@@ -2,8 +2,7 @@ const express = require('express');
 const fs = require('fs')
 const app = express();
 
-const items = []
-
+var items;
 app.get('/', (req, res) => {
   res.send('Hi there!')
 });
@@ -17,22 +16,15 @@ app.listen(3000, () => {
 });
 
 
-//Loads menu from items.txt
-try {
-  const data = fs.readFileSync('menu.txt', 'utf8')
-  let menuitems = data.split('\n')
-  var i;
-  for(i in menuitems){
-    let menuitem = menuitems[i].split('-|-')
-    menuitem = {
-      Name:menuitem[0],
-      Type: menuitem[1],
-      Desc: menuitem[2],
-      Img:menuitem[3],
-      Price: menuitem[4]
+
+//Loads menu from items.json
+
+fs.readFile('menu.json', 'utf-8', (err, data) => {
+    if (err) {
+        throw err;
     }
-    items.push(menuitem)
-  }
-} catch (err) {
-  console.error(err)
-}
+
+    items = JSON.parse(data.toString());
+
+});
+

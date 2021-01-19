@@ -1,0 +1,23 @@
+[
+    {
+        "Name": "Cheeseburger",
+        "Type": "Burger",
+        "Desc": "Our signature burger, prepared with cheese. Any toppings can be added as well.",
+        "Img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/1200px-Cheeseburger.jpg",
+        "Price": "4.50"
+    },
+    {
+        "Name": "Burger",
+        "Type": "Burger",
+        "Desc": "Our signature burger, prepared without cheese. Any toppings can be added as well.",
+        "Img": "https://2.bp.blogspot.com/-fI1L3HCUurA/TdLXBMZ8mEI/AAAAAAAAAJ4/2M31QKpE41g/s1600/hamburger.jpg",
+        "Price": "4.00"
+    },
+    {
+        "Name": "Fries",
+        "Type": "Fries",
+        "Desc": "Our signature fries.",
+        "Img": "https://media2.s-nbcnews.com/i/newscms/2017_24/1220911/french-fries-today-170612-tease_327fa4cb97be2176facc040734d6ae93.jpg",
+        "Price": "3.50"
+    }
+]
